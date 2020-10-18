@@ -1,0 +1,19 @@
+.registration_form{
+	background-color: blanchedalmond;
+	border: solid;
+	padding: 20px;
+	border-color: blue;
+	text-align: center;
+	
+}
+.login_form{
+	
+}
+.Last {
+	text-align: right;
+	color: blue;
+}
+.login_heading {
+	text-align: center;
+	color: firebrick;
+}

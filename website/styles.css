@@ -1,0 +1,28 @@
+
+.Welcome_message {
+	font-family: fantasy;
+	text-align: center;
+	font-size: 35px;
+	color: gold;
+	background-color: blue;
+}
+.Last {
+	color: blue;
+	font-family: cursive;
+	text-align: right;
+	font-size: 25px;
+
+}
+#nav .list_index {
+	text-align: left;
+}
+.about_in_index a{
+	font-family: cursive;
+	font-size: 14px;
+	padding: 10px;	
+}
+.logistics {
+	background-color: blue;
+	color: gold;
+}
+

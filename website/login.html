@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/CSS" href="login_page.css">
+	<!--This is a comment-->
+	<div class="login_heading">
+		<h2>Welcome to the Centralized Login page</h2>
+	</div>
+</head>
+<body>
+	
+	<form>
+		
+		<div class="registration_form" style="background-image: url(nikolay-tarashchenko-0mX_FXDojEE-unsplash.jpg);color: red;font-size: 25px; background-size: cover; background-position: center;transition: 5s;">
+			<label for="Name">Username Please</label><br>
+			<input type="text" name="Name" placeholder="Dummy Name"><br>
+			<label for="Email">Email-id Please</label><br>
+			<input type="email" name="Email" placeholder="abc@example.com"><br>
+			<label for="Password">Password please</label><br>
+			<input type="password" name="Password" placeholder="Put a strong password"><br>
+			<label for="Name">Re-enter the Password</label><br>
+			<input type="password" name="Password"><br>
+			<label for="Date">Your Date of Birth please</label><br>
+			<input type="date" name="Date"><br>
+			<label for="Num">Please give your mobile Number</label><br>
+			<input type="number" name="Num" placeholder="9988776655"><br>
+			<label>Please select your Gender</label><br>
+			<input type="radio" id="Male" name="Male" value="Male">
+			<label for="Male">I am a Male</label><br>
+			<input type="radio" id="Female" name="Female" value="Female">
+			<label for="Female">I am a Female</label><br>
+			<input type="radio" id="Other" name="Other" value="Other">
+			<label for="Other">Other</label><br>
+			<label for="Photo">Want to give your profile a photo?</label><br>
+			<input type="file" name="Image"><br><br>
+			<input type="captcha" name="captcha">
+			<div class="g-recaptcha" data-sitekey="WEBSITEKEYHERE" data-theme="light" data-size="normal" data-image="image"></div>
+			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+			<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxDDTIazKkcNp66eiPfe2yCLh8fYMCTafSFahIHWcylWe-kM1w/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+			<br><br>
+			<input type="checkbox" name="Agreement">
+			<button><a href="useragreement.html">User Agreement (You have to check it)</a></button><br>
+			<input type="submit" value="Register" onclick="confirm('By registering to our website you agree to our user agreement')"><br>
+			<label for="Reset">Having any problem, want to reset the whole?</label>
+			<input type="reset" value="Reset"><br>
+			<p>Already have an Account?<a href="#">Sign-in</a></p>
+
+			
+		</div>
+
+		<div class="login_form">
+			<label for="Name">Username Please</label><br>
+			<input type="text" name="Name" placeholder="Your name here"><br>
+			<label for="Password">Password please</label><br>
+			<input type="password" name="Password" placeholder="Put your password here"><br>
+			<script src="https://www.google.com/reCaptcha/api.js" a sync defer></script> <!-- Captcha part-->
+			<label for="captcha">Enter the Captcha Code here</label>
+			<input type="captcha" name="captcha" placeholder="Captcha">
+			<p>Don't have an account? <a href="#">Register</a></p>
+		</div>
+	</form>
+</body>
+<footer>
+	<div class="Last" style="font-size: 25px;"><h6>Designed by Mindspace, A *** Group</h6></div>
+</footer>
+</html>
